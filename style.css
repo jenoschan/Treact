@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Inter:wght@400;600;900&family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui;
+    font-weight: 550;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.web__margins{
+    margin: 32px 32px;
+}
+
+.row{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    padding: 0 8px;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    background-color: #6415FF;
+    color:white;
+    border-style: none;
+    border-radius: 50px;
+    padding: 12px 32px;
+}
+
+button:hover{
+    background-color: #5011CC;
+}
+
+.purple{
+    color: #6415FF;
+}
+
+/* NAV */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.nav__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.nav__links{
+    transition: all 300ms ease;
+}
+
+ul li:nth-last-child(2){
+    margin: 0 24px 0 48px;
+    padding: 0 0 4px;
+}
+
+.nav__link{
+    margin: 0 24px;
+    padding: 0 0 4px;
+}
+
+.nav__link:hover{
+    color:#6415FF;
+    border-bottom: 4px solid #6415FF;
+    padding-bottom: 3px
+}
+
+.logo__container{
+    transition: all 300ms ease;
+}
+
+.nav__logo{
+    width: 40px;
+    margin-right: 12px;
+}
+
+.nav__title{
+    color: #243E63;
+    font-size: 25px;
+    line-height: 40px;
+    font-weight:bolder;
+}
+
+.nav__title:hover{
+    color:#6415FF;
+}
+
+/* HERO */
+
+#hero{
+    padding: 96px 0;
+}
+
+.hero__container{
+    display: flex;
+    flex: 0 0 auto;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.hero__info{
+    width: 40%;
+}
+
+.hero__title{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+.hero__img{
+    width: 100%;
+    min-width: 0px;
+    max-width: 40rem;
+}
+
