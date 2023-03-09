@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Inter', system-ui;
     font-weight: 550;
+    line-height: 1.5;
 }
 
 html{
@@ -61,17 +62,20 @@ h1{
     color: #243E63;
     font-size: 48px;
     font-weight: bold;
-    line-height: 1.25;
 }
 
 h2{
     display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    font-size: 48px;
     font-weight: bold;
+}
+
+.section__name{
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    opacity: 1;
 }
 
 /* NAV */
@@ -150,7 +154,6 @@ ul li:nth-last-child(2){
 .hero__description{
     padding: 16px 0;
     font-size: 18px;
-    line-height: 1.5;
     font-weight: lighter;
 }
 
@@ -205,11 +208,6 @@ ul li:nth-last-child(2){
 
 .hero__customer_title{
     color: rgb(160 174 192);
-    font-size: 0.75rem;
-    text-transform: capitalize;
-    letter-spacing: 0.05rem;
-    font-weight: 700;
-    opacity: 1;
 }
 
 .hero__customer_logos{
@@ -223,6 +221,9 @@ ul li:nth-last-child(2){
 /* FEATURES */
 
 .features__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     padding: 96px 0;
     margin: 0 80px;
@@ -230,4 +231,54 @@ ul li:nth-last-child(2){
 
 .features__title{
     font-weight: bolder;
+}
+
+.features__description{
+    max-width: 36rem;
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+.services__container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.vertical_spacer{
+    margin-top: 40px;
+}
+
+.service__containers{
+    width: 30%;
+    display: flex;
+    padding: 32px 8px;
+    margin: 0 16px;
+    align-items: flex-start;
+}
+
+.service__icons{
+    border: 2px solid rgb(226, 232, 240);
+    padding: 20px;
+    border-radius: 100%;
+}
+
+.service__info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 16px;
+}
+
+.service__title{
+    font-size: 24px;
+    color: #243E63;
+    font-weight: bold;
+}
+
+.service__description{
+    margin-top: 8px;
+    font-size: 16px;
+    color: rgb(124 139 161);
+    font-weight: 500;
 }
