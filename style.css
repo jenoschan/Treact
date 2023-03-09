@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Inter:wght@400;600;900&family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
 
+/* TODO: animate each section when scrolling down */
+
 *{
     padding: 0;
     margin: 0;
@@ -19,7 +21,7 @@ html{
 
 .row{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -257,7 +259,7 @@ ul li:nth-last-child(2){
     align-items: flex-start;
 }
 
-.service__icons{
+.service__icons{      /*TODO: Icon not centered in the circle */
     border: 2px solid rgb(226, 232, 240);
     padding: 20px;
     border-radius: 100%;
@@ -277,6 +279,38 @@ ul li:nth-last-child(2){
 }
 
 .service__description{
+    margin-top: 8px;
+    font-size: 16px;
+    color: rgb(124 139 161);
+    font-weight: 500;
+}
+
+/*QUALITY WORK */
+
+.quality__container{
+    display: flex;
+    justify-content:space-between;
+}
+
+.quality__info_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.quality__img_container{
+    max-width: 100%;
+    height: auto;
+}
+
+.quality__img{
+    height: auto;
+}
+
+.quality__button{
+    margin-top: 32px;
+}
+
+.quality__description{
     margin-top: 8px;
     font-size: 16px;
     color: rgb(124 139 161);
