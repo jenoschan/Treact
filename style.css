@@ -53,7 +53,25 @@ button:hover{
 }
 
 .purple{
+    font-weight: bold;
     color: #6415FF;
+}
+
+h1{
+    color: #243E63;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 /* NAV */
@@ -101,9 +119,6 @@ ul li:nth-last-child(2){
 }
 
 .nav__title{
-    color: #243E63;
-    font-size: 25px;
-    line-height: 40px;
     font-weight:bolder;
 }
 
@@ -119,6 +134,7 @@ ul li:nth-last-child(2){
 
 .hero__container{
     display: flex;
+    flex-direction: row;
     flex: 0 0 auto;
     justify-content:space-between;
     align-items: center;
@@ -126,18 +142,92 @@ ul li:nth-last-child(2){
 }
 
 .hero__info{
+    display: flex;
+    flex-direction: column;
     width: 40%;
 }
 
-.hero__title{
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 1.25;
+.hero__description{
+    padding: 16px 0;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: lighter;
+}
+
+
+.hero__container_img{
+    display: block;
+    position: relative;
+    align-items: flex-end;
+    width: 60%;
 }
 
 .hero__img{
     width: 100%;
     min-width: 0px;
-    max-width: 40rem;
+    max-width: 769px;
 }
 
+.hero__container__email{
+    position: relative;
+    margin:16px 0;
+
+}
+
+.hero__email{
+    padding: 1rem 0 1rem 2rem;
+    border: 2px solid rgb(226, 232, 240);
+    border-radius: 25px;
+    width: 100%;
+}
+
+.hero__email::placeholder{
+    color:rgb(226, 232, 240);
+
+}
+
+.hero__button{
+    position: absolute;
+    right: 3px; 
+    top: 3px;
+    bottom: 3px;
+    border-radius: 100px;
+    z-index: 2;
+    font-size: 16px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__customers{
+    margin-top :5rem;
+}
+
+.hero__customer_title{
+    color: rgb(160 174 192);
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    opacity: 1;
+}
+
+.hero__customer_logos{
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    display: block;
+}
+
+/* FEATURES */
+
+.features__container{
+    text-align: center;
+    padding: 96px 0;
+    margin: 0 80px;
+}
+
+.features__title{
+    font-weight: bolder;
+}
